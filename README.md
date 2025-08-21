@@ -78,19 +78,19 @@ Automated promotion decisions using academic performance and attendance criteria
 
 ---
 
-## 🔮 Future Scope: Power BI Dashboard
+## 🔮 Power BI Dashboard
 
-Power BI visualizations planned:
+Power BI visualizations:
 - 🎯 Department-wise performance dashboards  
-- 🧾 Scholarship distribution reports  
-- 📈 Promotion trends  
+- 🧾 Scholarship distribution reports 
+- 📈 Fee structure and Top Scorers of College 
 - 📊 Drill-downs on top performers and dropouts  
 
 ---
 
 ## ✅ How to Use
 
-1. Open any MySQL-compatible client (MySQL Workbench / DBeaver / phpMyAdmin).
+1. Open any MySQL-compatible client (MySQL Workbench).
 2. Run `Full.sql` to create tables and populate data.
 3. Use `Queries.sql` to explore reports, filters, and analytics.
 
