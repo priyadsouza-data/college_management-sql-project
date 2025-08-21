@@ -14,7 +14,7 @@ To showcase how structured SQL operations can automate and analyze academic data
 
 - **Database**: MySQL  
 - **Languages/Tools**: SQL  
-- **Visualization**: Power BI (Coming Soon)
+- **Visualization**: Power BI 
 
 ---
 
@@ -27,7 +27,7 @@ student-database-sql-project/
 ├── Sample_inserted_values.sql # Sample INSERT statements
 ├── Queries.sql # Analysis and reporting queries
 ├── README.md # Project documentation
-└── assets/ # (Optional) Power BI visuals (upcoming)
+└── College Management Dashboard #Power BI visuals 
 
 yaml
 Copy
