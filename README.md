@@ -29,10 +29,6 @@ student-database-sql-project/
 ├── README.md # Project documentation
 └── College Management Dashboard.pbit #Power BI visuals 
 
-yaml
-Copy
-Edit
-
 ---
 
 ## 🧠 Database Highlights
@@ -114,7 +110,7 @@ Power BI visualizations:
 **Priya Dsouza**  
 Former Mathematics Lecturer | Data Analyst  
 🔍 Actively seeking full-time opportunities | Immediate Joiner  
-📫 [LinkedIn](https://www.linkedin.com/priya-dsouza-3a50a8257/) | 💻 [GitHub](https://github.com/priyadsouza-data
+📫 [LinkedIn](https://www.linkedin.com/priya-dsouza-3a50a8257/) | 💻 [GitHub](https://github.com/priyadsouza-data)
 
 ---
 
