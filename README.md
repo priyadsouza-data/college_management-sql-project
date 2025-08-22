@@ -89,9 +89,9 @@ Power BI visualizations:
 ---
 ## 📸 Dashboard Screenshots
 
-1️⃣ College Management Dashboard : [Screenshots/College Management Dashboard.png)
+1️⃣ College Management Dashboard : ![Screenshots](College%20Management%20Dashboard.png)
 
-2️⃣ Achievement Tooltip : [Screenshots/Achievement Tooltip.png)
+2️⃣ Achievement Tooltip : ![Screenshots](Achievement%20Tooltip.png)
 
 ## ✅ How to Use
 
