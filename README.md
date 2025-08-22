@@ -81,17 +81,25 @@ Automated promotion decisions using academic performance and attendance criteria
 ## 🔮 Power BI Dashboard
 
 Power BI visualizations:
-- 🎯 Department-wise performance dashboards  
-- 🧾 Scholarship distribution reports 
-- 📈 Fee structure and Top Scorers of College 
-- 📊 Drill-downs on top performers and dropouts  
+
+-🎯 Department-wise Performance Dashboards → KPIs such as Total Students, Number of Departments, Overall Percentage
+
+-🧾 Fee Structure & Scholarship Distribution Reports → Insights into financial aid and fee collections
+
+-📈 Top Scorers of the College → Highlighting academic excellence
+
+-📊 Student Achievements → State and National level recognitions showcased through interactive tooltips
 
 ---
 ## 📸 Dashboard Screenshots
 
-1️⃣ College Management Dashboard : ![Screenshots](College%20Management%20Dashboard.png)
+1️⃣ College Management Dashboard 
+![College Management Dashboard](Screenshots/college_management_dashboard.png)
 
-2️⃣ Achievement Tooltip : ![Screenshots](Achievement%20Tooltip.png)
+2️⃣ Achievement Tooltip 
+
+
+![Achievement Tooltip](Screenshots/achievement_tooltip.png)
 
 ## ✅ How to Use
 
