@@ -1,6 +1,6 @@
 # 🎓 College Management SQL Project
 
-A comprehensive SQL-based project simulating a real-world college management system. It covers student records, departmental subjects, performance analysis, scholarship decisions, and promotion logic. Designed to demonstrate advanced SQL capabilities and ready for Power BI integration.
+A comprehensive SQL-based project simulating a real-world college management system. It covers student records, departmental subjects, performance analysis, scholarship decisions, and promotion logic. Designed to demonstrate advanced SQL capabilities and Power BI integration.
 
 ---
 
@@ -27,7 +27,7 @@ student-database-sql-project/
 ├── Sample_inserted_values.sql # Sample INSERT statements
 ├── Queries.sql # Analysis and reporting queries
 ├── README.md # Project documentation
-└── College Management Dashboard #Power BI visuals 
+└── College Management Dashboard.pbit #Power BI visuals 
 
 yaml
 Copy
@@ -87,6 +87,11 @@ Power BI visualizations:
 - 📊 Drill-downs on top performers and dropouts  
 
 ---
+## 📸 Dashboard Screenshots
+
+1️⃣ College Management Dashboard : [Screenshots](College Management Dashboard.png)
+
+2️⃣ Achievement Tooltip : [Screenshots](Achievement Tooltip.png)
 
 ## ✅ How to Use
 
@@ -98,8 +103,8 @@ Power BI visualizations:
 
 ## 🧑‍🎓 Author
 
-**Priya Fernandes**  
-Former Mathematics Lecturer | Aspiring Data Analyst  
+**Priya Dsouza**  
+Former Mathematics Lecturer | Data Analyst  
 🔍 Actively seeking full-time opportunities | Immediate Joiner  
 📫 [LinkedIn](https://www.linkedin.com/priya-dsouza-3a50a8257/) | 💻 [GitHub](https://github.com/priyadsouza-data
 
