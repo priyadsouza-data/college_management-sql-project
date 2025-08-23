@@ -243,15 +243,23 @@ INSERT INTO Attendance (student_id, total_days, present_days) VALUES
 SELECT * FROM attendance;
 
 -- Query: Top Scorers by Department
-SELECT d.department_name, s.student_name, s.marks_percentage
-FROM Students s
-JOIN Departments d ON s.department_id = d.department_id
-WHERE s.marks_percentage = (
-    SELECT MAX(marks_percentage)
-    FROM Students s2
-    WHERE s2.department_id = s.department_id
-);
+SELECT department_name, student_name, percentage
+FROM (
+    SELECT d.department_name,
+           s.student_name,
+           ROUND(AVG(m.marks_obtained), 2) AS percentage,
+           ROW_NUMBER() OVER (
+               PARTITION BY d.department_id
+               ORDER BY AVG(m.marks_obtained) DESC
+           ) AS rnk
+    FROM Students s
+    JOIN Marks m ON s.student_id = m.student_id
+    JOIN Departments d ON s.department_id = d.department_id
+    GROUP BY d.department_name, d.department_id, s.student_id, s.student_name
+) ranked
+WHERE rnk = 1;
 
+-- Query: Department wise Overall pass percentage along with number of failures
 WITH StudentFailures AS (
     SELECT DISTINCT student_id
     FROM Marks
@@ -297,16 +305,20 @@ FROM Students s
 JOIN Attendance a ON s.student_id = a.student_id;
 
 -- Query: Final Promotion Status (Pass/Fail + Attendance)
-SELECT s.student_name, s.marks_percentage, 
-       ROUND((a.present_days*100.0)/a.total_days, 2) AS attendance_percentage,
-       CASE 
-           WHEN s.student_id IN (
-               SELECT student_id FROM Marks GROUP BY student_id HAVING MIN(marks_obtained) < 35
-           ) OR (a.present_days*100.0/a.total_days < 75) THEN 'Not Promoted'
-           ELSE 'Promoted'
-       END AS final_promotion_status
+SELECT 
+    s.student_name,
+    ROUND(AVG(m.marks_obtained), 2) AS percentage,
+    ROUND((a.present_days * 100.0) / a.total_days, 2) AS attendance_percentage,
+    CASE 
+        WHEN ROUND(AVG(m.marks_obtained), 2) < 35 
+             OR ROUND((a.present_days * 100.0) / a.total_days, 2) < 75 
+        THEN 'Not Promoted'
+        ELSE 'Promoted'
+    END AS final_promotion_status
 FROM Students s
-JOIN Attendance a ON s.student_id = a.student_id;
+JOIN Marks m ON s.student_id = m.student_id
+JOIN Attendance a ON s.student_id = a.student_id
+GROUP BY s.student_name, a.present_days, a.total_days;
 
 
 
